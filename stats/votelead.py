@@ -9,8 +9,8 @@ class TopGGCog(commands.Cog):
     @commands.hybrid_command()
     async def votelead(self, ctx):
         """Displays the top 10 users and total votes from top.gg"""
-        url = "https://top.gg/api/bots/733808027651801110/votes"
-        headers = {"Authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjczMzgwODAyNzY1MTgwMTExMCIsImJvdCI6dHJ1ZSwiaWF0IjoxNjgzMTk4MzM4fQ.CA7VhiS-3NXzg1yNPwH2E1LqtMxW7MO4cdHCwKeOhKA"} # Replace with your top.gg authorization token
+        url = ""
+        headers = {"Authorization": ""} # Replace with your top.gg authorization token
         response = requests.get(url, headers=headers)
 
         if response.status_code == 200:
